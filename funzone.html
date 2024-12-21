@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Zone</title>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Fun Zone</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Rufus</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="funzone.html">Fun Zone</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fun-facts">
+            <h2>Random Dog Fact</h2>
+            <p id="dog-fact">Click the button below to see a fun dog fact!</p>
+            <button id="fetch-fact">Get a Dog Fact</button>
+        </section>
+
+        <section id="interactive-game">
+            <h2>Interactive Game</h2>
+            <p>Can you guess Rufus' favorite activity?</p>
+            <ul id="game-options">
+                <li><button onclick="checkAnswer('Playing fetch')">Playing fetch</button></li>
+                <li><button onclick="checkAnswer('Napping')">Napping</button></li>
+                <li><button onclick="checkAnswer('Eating treats')">Eating treats</button></li>
+                <li><button onclick="checkAnswer('Chasing squirrels')">Chasing squirrels</button></li>
+            </ul>
+            <p id="game-result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rufus' Realm. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
